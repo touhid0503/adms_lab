@@ -69,3 +69,12 @@ WHERE TID IN (
     FROM Teacher 
     WHERE FirstName LIKE 'd%' OR FirstName LIKE 'f%'
 );
+
+SELECT FirstName, Salary
+FROM Teacher
+WHERE Dept = 'CSE'
+AND Salary > (
+    SELECT Salary 
+    FROM Teacher 
+    WHERE FirstName = 'Mizanur' AND LastName = 'Rahman'
+);
