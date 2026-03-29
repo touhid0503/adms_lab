@@ -91,3 +91,8 @@ SELECT Teacher.TID, Teacher.Salary, Department.deptID
 FROM Teacher 
 JOIN Department ON Teacher.Dept = Department.deptName
 WHERE Teacher.Salary > (SELECT AVG(Salary) FROM Teacher);
+
+SELECT Dept, MIN(Salary)
+FROM Teacher
+GROUP BY Dept
+HAVING MIN(Salary) < (SELECT AVG(Salary) FROM Teacher);
