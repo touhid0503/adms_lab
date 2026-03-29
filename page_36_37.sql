@@ -18,3 +18,9 @@ INSERT INTO Worker2 VALUES
 (8,'Keshob','Ray',90000,'Admin','2024-04-11');
 
 select * from Worker2
+
+CREATE TABLE Bonus (
+    WORKER_REF_ID INT,
+    BONUS_DATE DATETIME,
+    BONUS_AMOUNT INT
+);
