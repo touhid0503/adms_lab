@@ -33,3 +33,6 @@ SET SALARY = CASE
         THEN SALARY * 1.10
     ELSE SALARY * 1.05
 END;
+
+SELECT * FROM Worker1
+WHERE FIRST_NAME IN ('Rana','Sajib');
