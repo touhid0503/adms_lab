@@ -19,3 +19,9 @@ INSERT INTO Teacher VALUES
 (3, 'Shafiul', 'Islam', 'EEE', 24, 30000),
 (4, 'Faisal', 'Imran', 'CSE', 30, 50000),
 (5, 'Ahsan', 'Habib', 'English', 28, 28000);
+
+INSERT INTO Department VALUES
+(1, 'CSE', 'Talaimari'),
+(2, 'EEE', 'Talaimari'),
+(3, 'English', 'Kajla'),
+(4, 'BBA', 'Talaimari');
