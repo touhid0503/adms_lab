@@ -23,3 +23,5 @@ INSERT INTO Worker VALUES
 (6,'Alamgir','Kabir',200000,'Account','2024-06-11 09:00:00'),
 (7,'Foridul','Islam',75000,'Account','2024-01-20 09:00:00'),
 (8,'Keshob','Ray',90000,'Admin','2024-04-11 09:00:00');
+
+SELECT * FROM Worker;
