@@ -49,3 +49,9 @@ WHERE Age BETWEEN 23 AND 27;
 SELECT TID, FirstName
 FROM Teacher
 WHERE Salary < (SELECT AVG(Salary) FROM Teacher);
+
+UPDATE Teacher
+SET Dept = 'English'
+WHERE Dept IN (
+    SELECT deptName FROM Department WHERE deptName = 'EEE'
+);
