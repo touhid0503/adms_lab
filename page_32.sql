@@ -18,3 +18,5 @@ INSERT INTO Worker1 VALUES
 (8,'Keshob','Ray',90000,'Admin','2024-04-11');
 
 select * from Worker1
+
+SELECT LEFT(FIRST_NAME,3) FROM Worker1;
