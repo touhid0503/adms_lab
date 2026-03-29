@@ -1,3 +1,3 @@
 # adms_lab
- Pages 17-18
- More coming soon..
+1. Pages 17-18
+2. More coming soon..
