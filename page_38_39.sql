@@ -37,3 +37,7 @@ Select *
 INTO Teacher_Copy
 FROM Teacher
 WHERE TID IN (SELECT TID FROM Teacher);
+
+SELECT FirstName + ' ' + LastName AS FullName, Age
+FROM Teacher
+WHERE Salary = (SELECT MAX(Salary) FROM Teacher);
