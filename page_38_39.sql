@@ -86,3 +86,8 @@ WHERE Dept = (
     FROM Teacher 
     WHERE FirstName = 'Delwar' AND Age = 26
 );
+
+SELECT Teacher.TID, Teacher.Salary, Department.deptID
+FROM Teacher 
+JOIN Department ON Teacher.Dept = Department.deptName
+WHERE Teacher.Salary > (SELECT AVG(Salary) FROM Teacher);
