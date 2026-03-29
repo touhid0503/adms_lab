@@ -10,3 +10,5 @@ CREATE TABLE Worker (
 Alter Table Worker Add JOINING_DATE DATETIME
 Alter Table Worker Alter Column SALARY BIGINT
 Alter Table Worker Alter Column DEPARTMENT VARCHAR(100)
+
+Alter Table Worker Add CONSTRAINT checksalary Check (Salary>100)
