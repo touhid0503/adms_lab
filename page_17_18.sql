@@ -8,3 +8,4 @@ CREATE TABLE Worker (
 );
 
 Alter Table Worker Add JOINING_DATE DATETIME
+Alter Table Worker Alter Column SALARY BIGINT
