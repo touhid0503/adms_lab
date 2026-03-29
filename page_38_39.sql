@@ -41,3 +41,7 @@ WHERE TID IN (SELECT TID FROM Teacher);
 SELECT FirstName + ' ' + LastName AS FullName, Age
 FROM Teacher
 WHERE Salary = (SELECT MAX(Salary) FROM Teacher);
+
+SELECT FirstName, Age, Dept
+FROM Teacher
+WHERE Age BETWEEN 23 AND 27;
