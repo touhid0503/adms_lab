@@ -32,3 +32,8 @@ SET Salary =
         WHEN Dept = 'CSE' THEN Salary * 1.15
         ELSE Salary * 1.10
     END;
+
+Select *
+INTO Teacher_Copy
+FROM Teacher
+WHERE TID IN (SELECT TID FROM Teacher);
