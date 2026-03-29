@@ -25,3 +25,10 @@ INSERT INTO Department VALUES
 (2, 'EEE', 'Talaimari'),
 (3, 'English', 'Kajla'),
 (4, 'BBA', 'Talaimari');
+
+UPDATE Teacher
+SET Salary = 
+    CASE 
+        WHEN Dept = 'CSE' THEN Salary * 1.15
+        ELSE Salary * 1.10
+    END;
