@@ -6,3 +6,9 @@ CREATE TABLE Teacher (
     Age INT,
     Salary INT
 );
+
+CREATE TABLE Department (
+    deptID INT PRIMARY KEY,
+    deptName VARCHAR(50),
+    location VARCHAR(50)
+);
