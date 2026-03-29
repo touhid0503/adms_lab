@@ -48,3 +48,9 @@ INSERT INTO Title VALUES
 (7,'Executive','2019-06-11'),
 (6,'Lead','2019-06-11'),
 (3,'Lead','2019-06-11');
+
+SELECT Worker2.*
+FROM Worker2 
+JOIN Title ON Worker2.WORKER_ID = Title.WORKER_REF_ID
+WHERE Title.WORKER_TITLE NOT IN ('Manager', 'Asst. Manager');
+
