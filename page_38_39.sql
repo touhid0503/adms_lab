@@ -55,3 +55,9 @@ SET Dept = 'English'
 WHERE Dept IN (
     SELECT deptName FROM Department WHERE deptName = 'EEE'
 );
+
+UPDATE Teacher
+SET Salary = Salary * 100
+WHERE TID IN (
+    SELECT TID FROM Teacher WHERE Salary > 5000
+);
