@@ -78,3 +78,11 @@ AND Salary > (
     FROM Teacher 
     WHERE FirstName = 'Mizanur' AND LastName = 'Rahman'
 );
+
+SELECT TID, FirstName
+FROM Teacher
+WHERE Dept = (
+    SELECT Dept 
+    FROM Teacher 
+    WHERE FirstName = 'Delwar' AND Age = 26
+);
