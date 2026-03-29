@@ -102,3 +102,7 @@ FROM Teacher
 WHERE Dept IN (
     SELECT deptName FROM Department WHERE location = 'Kajla'
 );
+
+SELECT TID, FirstName, Salary
+FROM Teacher
+WHERE LEN(FirstName) >= 6;
