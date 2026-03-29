@@ -40,3 +40,5 @@ WHERE FIRST_NAME IN ('Rana','Sajib');
 SELECT * FROM Worker1
 WHERE FIRST_NAME NOT IN ('Rana','Sajib');
 
+SELECT * FROM Worker1
+WHERE FIRST_NAME LIKE '%a%';
