@@ -96,3 +96,9 @@ SELECT Dept, MIN(Salary)
 FROM Teacher
 GROUP BY Dept
 HAVING MIN(Salary) < (SELECT AVG(Salary) FROM Teacher);
+
+SELECT FirstName, LastName, Dept
+FROM Teacher
+WHERE Dept IN (
+    SELECT deptName FROM Department WHERE location = 'Kajla'
+);
