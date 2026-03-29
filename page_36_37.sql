@@ -102,3 +102,7 @@ INTO Worker_Copy
 FROM Worker2;
 
 SELECT Getdate();
+
+SELECT TOP 10 Worker2.FIRST_NAME, Worker2.LAST_NAME, Title.WORKER_TITLE
+FROM Worker2
+JOIN Title ON Worker2.WORKER_ID = Title.WORKER_REF_ID;
