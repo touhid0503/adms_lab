@@ -38,3 +38,13 @@ CREATE TABLE Title (
     WORKER_TITLE VARCHAR(50),
     AFFECTED_FROM DATETIME
 );
+
+INSERT INTO Title VALUES
+(1,'Manager','2019-02-20'),
+(2,'Executive','2019-06-11'),
+(8,'Executive','2019-06-11'),
+(5,'Manager','2019-06-11'),
+(4,'Asst. Manager','2019-06-11'),
+(7,'Executive','2019-06-11'),
+(6,'Lead','2019-06-11'),
+(3,'Lead','2019-06-11');
