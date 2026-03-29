@@ -61,3 +61,11 @@ SET Salary = Salary * 100
 WHERE TID IN (
     SELECT TID FROM Teacher WHERE Salary > 5000
 );
+
+SELECT FirstName
+FROM Teacher
+WHERE TID IN (
+    SELECT TID 
+    FROM Teacher 
+    WHERE FirstName LIKE 'd%' OR FirstName LIKE 'f%'
+);
