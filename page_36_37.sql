@@ -100,3 +100,5 @@ WHERE WORKER_ID%2 = 0;
 SELECT *
 INTO Worker_Copy
 FROM Worker2;
+
+SELECT Getdate();
