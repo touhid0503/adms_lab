@@ -45,3 +45,7 @@ WHERE Salary = (SELECT MAX(Salary) FROM Teacher);
 SELECT FirstName, Age, Dept
 FROM Teacher
 WHERE Age BETWEEN 23 AND 27;
+
+SELECT TID, FirstName
+FROM Teacher
+WHERE Salary < (SELECT AVG(Salary) FROM Teacher);
