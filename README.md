@@ -4,4 +4,4 @@
 3. Pages 36-37
 4. Pages 38-39
 5. Page 55
-6. More coming soon..
+6. Pages 60-61
